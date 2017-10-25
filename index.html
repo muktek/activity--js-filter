@@ -9,38 +9,74 @@
       div > * {margin-top: 0;}
       code {background: #ddd; color: firebrick; padding: 3px;}
       mark { background: #F4D03F; padding: 3px;}
+      hr {margin-bottom: 40px;}
+      ul {list-style: none}
+      li { padding: 10px; border: 1px solid #ddd; display: block; margin: 5px; }
+      li.incomplete{border: 2px solid firebrick; color: firebrick;}
+      li.complete{border: 1px solid darkgreen; color: darkgreen;}
+      h4 {margin: 20px; font-weight: 100;}
+      h4 span {padding: 25px; background: lightyellow; display: inline-block; vertical-align: middle; border: palegoldenrod 1px solid;}
     </style>
   </head>
   <body>
     <div>
       <h1>
         Assignment: <br/>
-        &nbsp;&nbsp;<code>js-object-basics</code>
+        &nbsp;&nbsp;<code>js-filter</code>
       </h1>
       <p>All the <em>fun</em> is in the console</p>
       <p>Check your results <mark><a target="_blank" href="./_test-suite/test.html">here</a></mark></p>
+
+      <hr/>
+
+      <h3>Todo List<br/><code>ex-04</code></h3>
+      <h4>
+        <span class="incomplete-task-count">
+          <!-- data goes here  -->
+        </span>
+        Incomplete Tasks
+      </h4>
+
+      <ul>
+        <li class="complete">Remind neighbor</li>
+        <li class="incomplete">Buy newspaper</li>
+        <li class="complete">Take out trash</li>
+        <li class="complete">Clean bathroom</li>
+        <li class="incomplete">Write email to mother</li>
+        <li class="complete">Tell friend happy bday</li>
+        <li class="incomplete">Make doctor appointment</li>
+        <li class="incomplete">Fix the leak in the shower</li>
+        <li class="incomplete">Organize bedroom closet</li>
+        <li class="incomplete">Finish coding exercise</li>
+        <li class="incomplete">Take chicken out of freezer</li>
+        <li class="complete">Buy sugar and milk</li>
+        <li class="incomplete">Call repairman for air conditioning</li>
+        <li class="incomplete">Organize bedroom closet</li>
+        <li class="complete">Write email to boss</li>
+        <li class="incomplete">Write letter to grandmother</li>
+        <li class="complete">Give cake to neighbor</li>
+        <li class="complete">Cancel dentist appointment</li>
+        <li class="incomplete">Erase user history</li>
+        <li class="incomplete">Change cabel subscription</li>
+        <li class="incomplete">Return video tapes</li>
+        <li class="incomplete">Sew button on striped shirt</li>
+        <li class="complete">Sell read books to used bookstore</li>
+        <li class="incomplete">Cook meals for the week</li>
+        <li class="incomplete">Paint the living room ceiling</li>
+        <li class="incomplete">Buy new power cord</li>
+      </ul>
     </div>
-
+    <script src="./countriesData.js"></script>
+    <!-- ex-00 -->
+    <script src='./ex-00-listCountriesInAfrica.js'></script>
     <!-- ex-01 -->
-    <!-- <script src='./ex-01-createHtmlElement.js'></script> -->
-
+    <script src='./ex-01-listLessThan1Million.js'></script>
     <!-- ex-02 -->
-    <!-- <script src='./ex-02-flipColor.js'></script> -->
-
+    <script src='./ex-02-listShareBorders.js'></script>
     <!-- ex-03 -->
-    <!-- <script src='./ex-03-makeNamesObject.js'></script> -->
-
+    <script src='./ex-03-summarizeTasksList.js'></script>
     <!-- ex-04 -->
-    <!-- <script src='./ex-04-createNameObject.js'></script> -->
-
-    <!-- ex-05 -->
-    <!-- <script src='./ex-05-makeFullNamesList.js'></script> -->
-
-    <!-- ex-06 -->
-    <!-- <script src='./ex-06-createListOfObjects.js'></script> -->
-
-    <!-- ex-07 -->
-    <!-- <script src='./ex-07-createCarRecord.js'></script> -->
+    <script src='./ex-04-listNorthEastQuadrant.js'></script>
 
   </body>
 </html>
