@@ -1,24 +1,45 @@
-# Map, Filter, Reduce
+# Filter
 
-**(a) `.map()`**
-- Return a list of country capitals
-- Return a list of number of languages spoken by country
-
-
-**`.filter()`**
-- Filter countries that don't share borders with anyone.
-- Filter countries in Europe that share < 4 borders
-- Filter countries that speak multiple languages AND have populations < 70,000,0000
-- Filter countries in the top right cuadrant of the Globe.
+### Explanation
+You will need to use the `.filter()` Array method to complete these exercises.
 
 
-**(c) `.find()`**  
-- Is there a country with less than 2,000,000 that has multiple official languages?
-- Is there a country in the Carribbean subregion that has a population of > 15,000,000 ?
+### Setup
+```sh
+# (1) cd into warmup folder and make directory
+cd ~/Documents/muktek/warmups
+mkdir js-filter
+cd js-filter
+
+# (2) curl and unzip the install files
+curl https://raw.githubusercontent.com/muktek/activity--js-filter/master/warmup-files.zip > warmup-files.zip
+
+unzip warmup-files.zip
+
+#(3) Complete the exercises in the .js files!
+```
+
+### Reminder
+The filter method is executed on an array and returns a limited set of the original array.
+
+It accepts a function as an argument.
+
+The function-argument that you pass to `.filter()` will be executed on each element in the array.
+
+Inside the function-argument, you will need to return the boolean `true` or `false`. If the value returned is `true` then the value from the original array is added to the returned array. If the value returned is `false` then the value from the original array is not added to the returned array.
 
 
-**(d) `.reduce()`**
-- Use reduce to add the total world population
-- Use reduce to calculate the population by region
-- Use reduce to return the name of the country with the highest population density (population/area)
-- Use reduce to create an object with a list of countries by region.
+```js
+let originalArray = ['wow', 'cool', 'superb', 'hello', 'hi']
+
+let filteredArray = originalArray.filter(function(arrayElement, index, originalArray){
+   if(arrayElement.length < 5){
+     return true
+   } else {
+     return false
+   }
+})
+
+originalArray //=> ['wow', 'cool', 'superb', 'hello', 'hi']
+someNewArray //=> ['wow', 'cool', 'hi']
+```
